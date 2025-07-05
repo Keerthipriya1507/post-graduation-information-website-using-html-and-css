@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Login Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: antiquewhite;
+            font-family: 'Arial';
+            background-image: url("https://img.freepik.com/free-vector/geometric-gradient-futuristic-background_232149116406.jpg?w=900&t=st=1704174316~exp=1704174916~hmac=0c63c703acfef2bccdd72663adc700545ec26a3aa793080af58455efe3c8697b");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .login {
+            width: 382px;
+            margin: auto;
+            padding: 80px;
+            background: orange;
+            border-radius: 55px;
+            overflow: hidden;
+            margin-top: 100px;
+        }
+
+        h2 {
+            text-align: center;
+            color: gold;
+            padding: 20px;
+        }
+
+        label {
+            color: black;
+            font-size: 17px;
+        }
+
+        #Uname,
+        #Pass {
+            width: 300px;
+            height: 30px;
+            border: none;
+            border-radius: 3px;
+            padding-left: 8px;
+            margin-bottom: 20px;
+        }
+
+        #Uname {
+            margin-bottom: 10px;
+        }
+
+        input[type="checkbox"] {
+            margin-bottom: 20px;
+        }
+
+        .login input[type="submit"] {
+            width: 100%;
+            height: 35px;
+            border: none;
+            background-color: #ff6600;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        .login input[type="submit"]:hover {
+            background-color: #ff9900;
+        }
+
+        .login a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            text-align: center;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .login a:hover {
+            color: #ff6600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Login Page</h2>
+    <div class="login">
+        <form id="login" method="get" action = "new.html" >
+            <label><b>User Name</b></label>
+            <input type="text" name="Uname" id="Uname" placeholder="Username" required>
+            <br>
+
+            <label><b>Password</b></label>
+            <input type="password" name="Pass" id="Pass" placeholder="Password" required>
+            <br>
+
+            <input type="checkbox" id="check">
+            <span>Remember me</span>
+            <br>
+
+            <input type="submit" value="Login">
+	</form>
+
+           <a href="signup.html">Don't have an account? Register here</a> 
+        
+    </div>
+
+</body>
+
+</html>
